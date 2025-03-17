@@ -1,0 +1,3 @@
+D:/AED_v2/Clases/Punteros-11_03/cmake-build-debug/CMakeFiles/Punteros_11_03.dir
+D:/AED_v2/Clases/Punteros-11_03/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/AED_v2/Clases/Punteros-11_03/cmake-build-debug/CMakeFiles/rebuild_cache.dir
