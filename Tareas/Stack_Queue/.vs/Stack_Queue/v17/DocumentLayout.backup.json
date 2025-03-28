@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\AED_v2\\Tareas\\Stack_Queue\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AEF740D2-9D60-4FDA-9819-131D85528219}|Stack_Queue\\Stack_Queue.vcxproj|D:\\AED_v2\\Tareas\\Stack_Queue\\Stack_Queue\\S\u0026Q.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AEF740D2-9D60-4FDA-9819-131D85528219}|Stack_Queue\\Stack_Queue.vcxproj|solutionrelative:Stack_Queue\\S\u0026Q.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEF740D2-9D60-4FDA-9819-131D85528219}|Stack_Queue\\Stack_Queue.vcxproj|D:\\AED_v2\\Tareas\\Stack_Queue\\Stack_Queue\\Stack_Queue.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AEF740D2-9D60-4FDA-9819-131D85528219}|Stack_Queue\\Stack_Queue.vcxproj|solutionrelative:Stack_Queue\\Stack_Queue.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "S\u0026Q.hpp",
+              "DocumentMoniker": "D:\\AED_v2\\Tareas\\Stack_Queue\\Stack_Queue\\S\u0026Q.hpp",
+              "RelativeDocumentMoniker": "Stack_Queue\\S\u0026Q.hpp",
+              "ToolTip": "D:\\AED_v2\\Tareas\\Stack_Queue\\Stack_Queue\\S\u0026Q.hpp",
+              "RelativeToolTip": "Stack_Queue\\S\u0026Q.hpp",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAC0AAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-28T12:48:24.55Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Stack_Queue.cpp",
+              "DocumentMoniker": "D:\\AED_v2\\Tareas\\Stack_Queue\\Stack_Queue\\Stack_Queue.cpp",
+              "RelativeDocumentMoniker": "Stack_Queue\\Stack_Queue.cpp",
+              "ToolTip": "D:\\AED_v2\\Tareas\\Stack_Queue\\Stack_Queue\\Stack_Queue.cpp",
+              "RelativeToolTip": "Stack_Queue\\Stack_Queue.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-28T12:47:44.231Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
