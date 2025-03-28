@@ -45,20 +45,16 @@ struct Bubble_menor :public Bubble_polimorfo {
     }
 };
 
-template <class T, class B>
+template <class T>
 class Bubble_funtor {
-    B comparador;
 public:
-    Bubble_funtor(B comparator) : comparador(std::move(comparator)) {};
-    void operator() (T* p, long size) {
-        for (T* pos = p; pos < p + T(size); pos++) {
-            T* cambio = pos;
-            for (T* ptrcambio = pos; ptrcambio < p + T(size); ptrcambio++) {
-                if (comparador(*ptrcambio, *cambio)) {
-                    cambio = ptrcambio;
+    void operator()(T* p, long size) {
+        for (long i = 0; i < size - 1; ++i) {
+            for (long j = 0; j < size - i - 1; ++j) {
+                if (p[j] > p[j + 1]) {
+                    std::swap(p[j], p[j + 1]);
                 }
             }
-            std::swap(*cambio, *pos);
         }
     }
 };
@@ -76,11 +72,12 @@ void bubblesort_componentes(int* p, long size, C c) {
         std::swap(*cambio, *pos);
     }
 }
-template <class T>
+
 struct Cmenos {
-    inline bool cmp(T a, T b) { return a < b; }
+    static inline bool cmp(int a, int b) { return a < b; }
 };
 template <class T>
 struct Cmas {
-    inline bool cmp(T a, T b) { return a < b; }
+    static inline bool cmp(T a, T b) { return a < b; }
 };
+
