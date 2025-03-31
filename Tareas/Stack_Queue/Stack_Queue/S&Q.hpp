@@ -43,8 +43,10 @@ public:
 	Queue_a(int size) :size(size){};
 	
 	void Push(T num){
-		if (head-1<tail||)
+		if (head - 1 < tail || ) {
 		
+		
+		}
 	}
 
 	void Pop(){

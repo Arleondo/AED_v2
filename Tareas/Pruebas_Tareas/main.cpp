@@ -39,9 +39,9 @@ int main() {
     end = chrono::high_resolution_clock::now();
     tiempos[1] = chrono::duration<double, milli>(end - start).count();
 
-    Cmenos comparador;
+    Cmas<int> comparador;
     start = chrono::high_resolution_clock::now();
-    bubblesort_componentes<Cmenos>(arr3, size, comparador);
+    bubblesort_componentes<Cmas<int>>(arr3, size, comparador);
     end = chrono::high_resolution_clock::now();
     tiempos[2] = chrono::duration<double, milli>(end - start).count();
 
