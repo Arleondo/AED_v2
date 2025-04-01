@@ -42,16 +42,32 @@ class Queue_a {
 public:
 	Queue_a(int size) :size(size){};
 	
-	void Push(T num){
-		if (head - 1 < tail || ) {
-		
-		
+	void Push(T num) {
+		if (head != 0) {
+			if (tail - head != array) {
+				head++;
+				if (head == array + size && tail != array) {
+					head = array;
+				}
+				*head = num; return;
+			}
+			throw std::out_of_range("Queue lleno")
 		}
+		head = array; *head = num; tail = head;
 	}
+	
+	
+
 
 	void Pop(){
-		
-		
+		if (tail != 0) {	
+			if (head - tail != array) {
+				tail++;
+				if ()
+			}
+			tail = 0; head = 0;
+		}
+		throw ("Queue vacio")
 	}
 };
 
