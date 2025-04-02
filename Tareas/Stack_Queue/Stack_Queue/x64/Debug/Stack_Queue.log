@@ -1,0 +1,22 @@
+﻿  Stack_Queue.cpp
+D:\AED_v2\Tareas\Stack_Queue\Stack_Queue\S&Q.hpp(56,31): error C2446: !=': no hay conversión de 'T *' en '__int64'
+D:\AED_v2\Tareas\Stack_Queue\Stack_Queue\S&Q.hpp(56,31): error C2446:         with
+D:\AED_v2\Tareas\Stack_Queue\Stack_Queue\S&Q.hpp(56,31): error C2446:         [
+D:\AED_v2\Tareas\Stack_Queue\Stack_Queue\S&Q.hpp(56,31): error C2446:             T=int
+D:\AED_v2\Tareas\Stack_Queue\Stack_Queue\S&Q.hpp(56,31): error C2446:         ]
+  (compilando archivo de origen "Stack_Queue.cpp")
+      D:\AED_v2\Tareas\Stack_Queue\Stack_Queue\S&Q.hpp(56,34):
+      No existe un contexto en el que sea posible realizar esta conversión
+      D:\AED_v2\Tareas\Stack_Queue\Stack_Queue\S&Q.hpp(56,31):
+      el contexto de creación de instancias de la plantilla (el más antiguo primero) es
+          D:\AED_v2\Tareas\Stack_Queue\Stack_Queue\Stack_Queue.cpp(8,18):
+          Vea la referencia a la creación de una instancia de clase plantilla "Queue_a<int>" que se está compilando
+          D:\AED_v2\Tareas\Stack_Queue\Stack_Queue\S&Q.hpp(54,10):
+          al compilar la función del miembro clase plantilla "void Queue_a<int>::Push(T)"
+          with
+          [
+              T=int
+          ]
+              D:\AED_v2\Tareas\Stack_Queue\Stack_Queue\Stack_Queue.cpp(17,26):
+              vea la primera referencia a “Queue_a<int>::Push” en “main”
+  

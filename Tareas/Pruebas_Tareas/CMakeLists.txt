@@ -3,4 +3,5 @@ project(Pruebas_Tareas)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(Pruebas_Tareas main.cpp)
+add_executable(Pruebas_Tareas main.cpp
+        S&Q.h)
