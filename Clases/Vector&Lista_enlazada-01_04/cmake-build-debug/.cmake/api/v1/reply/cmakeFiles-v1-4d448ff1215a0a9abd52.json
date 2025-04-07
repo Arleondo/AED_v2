@@ -54,21 +54,6 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeFindCodeBlocks.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeExtraGeneratorDetermineCompilerMacrosAndIncludeDirs.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/ProcessorCount.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
 			"path" : "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake"
 		},
 		{
@@ -169,8 +154,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "D:/AED_v2/Tareas/Pruebas_Tareas/cmake-build-debug",
-		"source" : "D:/AED_v2/Tareas/Pruebas_Tareas"
+		"build" : "D:/AED_v2/Clases/Vector&Lista_enlazada-01_04/cmake-build-debug",
+		"source" : "D:/AED_v2/Clases/Vector&Lista_enlazada-01_04"
 	},
 	"version" : 
 	{
