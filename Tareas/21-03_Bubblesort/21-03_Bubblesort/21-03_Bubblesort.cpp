@@ -7,7 +7,7 @@
 using namespace std;
 
 int main() {
-    const int size = 5000;
+    const int size = 50000;
     int arr[size] = {};
 
     for (int i = 0; i < size; i++) {
@@ -27,23 +27,31 @@ int main() {
     // Medir el tiempo de cada sort
     array<double, 4> tiempos{};
 
+
+    //directo
     auto start = chrono::high_resolution_clock::now();
     direct_bubblesort(arr, size);
     auto end = chrono::high_resolution_clock::now();
     tiempos[0] = chrono::duration<double, milli>(end - start).count();
 
+
+    //polimorfismo
     Bubble_mayor Bubble;
     start = chrono::high_resolution_clock::now();
     Bubble.sort(arr2, size);
     end = chrono::high_resolution_clock::now();
     tiempos[1] = chrono::duration<double, milli>(end - start).count();
 
+
+    //Puntero a funcion
     Cmenos comparador;
     start = chrono::high_resolution_clock::now();
     bubblesort_componentes<Cmenos>(arr3, size, comparador);
     end = chrono::high_resolution_clock::now();
     tiempos[2] = chrono::duration<double, milli>(end - start).count();
 
+
+    //Functor
     Bubble_funtor<int> bubbleFunctor;
     start = chrono::high_resolution_clock::now();
     bubbleFunctor(arr4, size);
