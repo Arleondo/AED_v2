@@ -5,16 +5,11 @@ using namespace std;
 
 int main() {
 
-    Queue_a<int> Primera_cola(5);
-
-    for (int i = 0; i < 3; i++) {
-        if (i == 0) {
-            cout << "Cola creada. :)\n"; i++;
-        }
-        int y;
-        cout << "Insertar elemento:\n";
-        cin >> y;
-        Primera_cola.Push(y);
-        if (i != 0) { i--; }
+    Stack_a<int> stack(10);
+    
+    for (int i = 10; i > 0; i) {
+        stack.push(i);
     }
+    stack.Print();
 }
+    

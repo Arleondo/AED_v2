@@ -4,11 +4,13 @@
 #include <algorithm>
 #include <array>
 #include "Bubblesorts.h"
+
 using namespace std;
 
 int main() {
     const int size = 50000;
     int arr[size] = {};
+
 
     for (int i = 0; i < size; i++) {
         arr[i] = i + 1;
@@ -19,54 +21,52 @@ int main() {
     shuffle(arr, arr + size, rng);
 
     int arr2[size], arr3[size], arr4[size];
-
     copy_n(arr, size, arr2);
     copy_n(arr, size, arr3);
     copy_n(arr, size, arr4);
 
-    // Medir el tiempo de cada sort
     array<double, 4> tiempos{};
 
-
-    //directo
+    //Directo
     auto start = chrono::high_resolution_clock::now();
     direct_bubblesort(arr, size);
     auto end = chrono::high_resolution_clock::now();
     tiempos[0] = chrono::duration<double, milli>(end - start).count();
 
-
-    //polimorfismo
-    Bubble_mayor Bubble;
+    //Polimorfismo
+    Bubble_mayor bubblePoli;
     start = chrono::high_resolution_clock::now();
-    Bubble.sort(arr2, size);
+    bubblePoli.sort(arr2, size);
     end = chrono::high_resolution_clock::now();
     tiempos[1] = chrono::duration<double, milli>(end - start).count();
 
-
-    //Puntero a funcion
-    Cmenos comparador;
+    //Puntero a función
     start = chrono::high_resolution_clock::now();
-    bubblesort_componentes<Cmenos>(arr3, size, comparador);
+    bubblesort_componentes(arr3, size, puntero_menor); // puntero_menor debe estar definido como bool(int, int)
     end = chrono::high_resolution_clock::now();
     tiempos[2] = chrono::duration<double, milli>(end - start).count();
 
-
-    //Functor
-    Bubble_funtor<int> bubbleFunctor;
+    //Functor (plantilla con comparador)
+    Bubble_funtor<int, Cmenos<int>> bubbleFunctor;
     start = chrono::high_resolution_clock::now();
     bubbleFunctor(arr4, size);
     end = chrono::high_resolution_clock::now();
     tiempos[3] = chrono::duration<double, milli>(end - start).count();
 
-    // Imprimir tiempos
+    string metodos[4] = {
+        "Bubble Sort Directo",
+        "Polimorfismo (Bubble_mayor)",
+        "Puntero a funcion (puntero_menor)",
+        "Functor (Cmenos)"
+    };
+
     cout << "Tiempos de ejecucion (ms):\n";
     for (int i = 0; i < 4; ++i) {
-        cout << "Metodo " << i + 1 << ": " << tiempos[i] << " ms\n";
+        cout << metodos[i] << ": " << tiempos[i] << " ms\n";
     }
 
     return 0;
 }
-
 
 
 

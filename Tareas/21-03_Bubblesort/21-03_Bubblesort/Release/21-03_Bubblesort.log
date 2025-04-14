@@ -1,0 +1,8 @@
+﻿  21-03_Bubblesort.cpp
+D:\AED_v2\Tareas\21-03_Bubblesort\21-03_Bubblesort\Bubblesorts.h(46,15): error C7524: El especificador "inline" no puede aparecer en una declaración de ámbito de bloque o un miembro de datos no estático.
+  (compilando archivo de origen "21-03_Bubblesort.cpp")
+      D:\AED_v2\Tareas\21-03_Bubblesort\21-03_Bubblesort\Bubblesorts.h(46,15):
+      el contexto de creación de instancias de la plantilla (el más antiguo primero) es
+          D:\AED_v2\Tareas\21-03_Bubblesort\21-03_Bubblesort\Bubblesorts.h(45,7):
+          al compilar la plantilla de clase 'Bubble_funtor'
+  
