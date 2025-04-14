@@ -94,7 +94,7 @@ struct Node{
     T valor;
     explicit Node(T valor,Node* next=nullptr,Node* prev=nullptr):valor(valor),next(next),prev(prev){};
 };
-
+2
 template <class T>
 class Lista_enlazada{
     Node<T>* Head; Node<T>* Tail;
