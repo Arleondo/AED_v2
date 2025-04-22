@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\AED\\Tareas\\Leque_S\u0026Q\\",
+  "WorkspaceRootPath": "D:\\AED_v2\\Tareas\\Leque_S\u0026Q\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DB82ECC6-DA00-4071-A89D-5658C1E34E48}|Leque_S\u0026Q\\Leque_S\u0026Q.vcxproj|D:\\AED\\Tareas\\Leque_S\u0026Q\\Leque_S\u0026Q\\Leques.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{DB82ECC6-DA00-4071-A89D-5658C1E34E48}|Leque_S\u0026Q\\Leque_S\u0026Q.vcxproj|D:\\AED_v2\\Tareas\\Leque_S\u0026Q\\Leque_S\u0026Q\\Leques.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{DB82ECC6-DA00-4071-A89D-5658C1E34E48}|Leque_S\u0026Q\\Leque_S\u0026Q.vcxproj|solutionrelative:Leque_S\u0026Q\\Leques.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DB82ECC6-DA00-4071-A89D-5658C1E34E48}|Leque_S\u0026Q\\Leque_S\u0026Q.vcxproj|D:\\AED\\Tareas\\Leque_S\u0026Q\\Leque_S\u0026Q\\Leque_S\u0026Q.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{DB82ECC6-DA00-4071-A89D-5658C1E34E48}|Leque_S\u0026Q\\Leque_S\u0026Q.vcxproj|D:\\AED_v2\\Tareas\\Leque_S\u0026Q\\Leque_S\u0026Q\\Leque_S\u0026Q.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{DB82ECC6-DA00-4071-A89D-5658C1E34E48}|Leque_S\u0026Q\\Leque_S\u0026Q.vcxproj|solutionrelative:Leque_S\u0026Q\\Leque_S\u0026Q.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -24,11 +24,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Leques.hpp",
-              "DocumentMoniker": "D:\\AED\\Tareas\\Leque_S\u0026Q\\Leque_S\u0026Q\\Leques.hpp",
+              "DocumentMoniker": "D:\\AED_v2\\Tareas\\Leque_S\u0026Q\\Leque_S\u0026Q\\Leques.hpp",
               "RelativeDocumentMoniker": "Leque_S\u0026Q\\Leques.hpp",
-              "ToolTip": "D:\\AED\\Tareas\\Leque_S\u0026Q\\Leque_S\u0026Q\\Leques.hpp",
+              "ToolTip": "D:\\AED_v2\\Tareas\\Leque_S\u0026Q\\Leque_S\u0026Q\\Leques.hpp",
               "RelativeToolTip": "Leque_S\u0026Q\\Leques.hpp",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAAwDwAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAADQAAAAAAAAAAAAowDcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-04-09T14:46:55.769Z",
               "EditorCaption": ""
@@ -37,9 +37,9 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Leque_S\u0026Q.cpp",
-              "DocumentMoniker": "D:\\AED\\Tareas\\Leque_S\u0026Q\\Leque_S\u0026Q\\Leque_S\u0026Q.cpp",
+              "DocumentMoniker": "D:\\AED_v2\\Tareas\\Leque_S\u0026Q\\Leque_S\u0026Q\\Leque_S\u0026Q.cpp",
               "RelativeDocumentMoniker": "Leque_S\u0026Q\\Leque_S\u0026Q.cpp",
-              "ToolTip": "D:\\AED\\Tareas\\Leque_S\u0026Q\\Leque_S\u0026Q\\Leque_S\u0026Q.cpp",
+              "ToolTip": "D:\\AED_v2\\Tareas\\Leque_S\u0026Q\\Leque_S\u0026Q\\Leque_S\u0026Q.cpp",
               "RelativeToolTip": "Leque_S\u0026Q\\Leque_S\u0026Q.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",

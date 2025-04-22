@@ -22,6 +22,14 @@ class L_stack {
 	int size;
 public:
 	L_stack(int size) :size(size), Root(nullptr){};
+	
+	~L_stack() {
+		while (Root) {
+			auto iterador = Root;
+			Root = Root->next;
+			delete iterador;
+		}
+	};
 
 	void push(T valor) {
 		if (Root) {
@@ -29,7 +37,9 @@ public:
 			Node<T>* Last=Root;
 			
 			//recorre hasta el ultimo
-			for (; Last->next; Last = Last->next);	Last->head++;
+			for (; Last->next; Last = Last->next);	
+			
+			Last->head++;
 			
 			//Compara si necesita crear
 			if (Last->head == (Last->array) + size) {
@@ -37,12 +47,13 @@ public:
 				Last = Last->next;
 			}
 
-			* Last->head = valor;
+			* (Last->head) = valor;
 
+			return;
 		}
-		Root = new Node<T>(size); *Root->head = valor;
+		Root = new Node<T>(size); *(Root->head) = valor;
 	}
-
+	
 	T& pop() {
 		T regreso;
 
@@ -70,4 +81,3 @@ public:
 	void print() {}
 
 };
-
