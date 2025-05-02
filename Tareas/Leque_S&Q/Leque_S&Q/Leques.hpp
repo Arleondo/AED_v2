@@ -31,7 +31,16 @@ private:
 	int array_size;
 
 public:
-	LStack(int array_size) : array_size(array_size),L_head,A_head(nullptr){}
+	LStack(int array_size) : array_size(array_size),L_head(nullptr),A_head(nullptr){}
+
+	~LStack() {
+		while (L_head != nullptr) {
+			Node<T>* temp = L_head;
+			L_head = L_head->next;
+			delete[] temp;
+		}
+		A_head = nullptr;
+	}
 
 	void push(T v) {
 		if (L_head == nullptr && A_head == nullptr) {
@@ -56,7 +65,7 @@ public:
 
 			if (L_head == nullptr) {A_head = nullptr;}
 
-			else {A_head = L_head->array + array_size - 1};
+			else { A_head = L_head->array + array_size - 1; }
 		}
 		else{v = *A_head; A_head--;}
 	}
@@ -71,7 +80,18 @@ private:
 
 public:
 
-	LQueue(int array_size) : array_size(array_size),L_Head,L_tail,A_Head,A_tail(nullptr) {}
+	LQueue(int array_size) : array_size(array_size),L_Head(nullptr),L_tail(nullptr),A_Head(nullptr),A_tail(nullptr) {}
+
+	~LQueue() {
+		while (L_Head != nullptr) {
+			Node<T>* temp = L_Head;
+			L_Head = L_Head->next;
+			delete temp;
+		}
+		L_tail = nullptr;
+		A_Head = nullptr;
+		A_tail = nullptr;
+	}
 
 	void push(T V) {
 		if (L_Head == nullptr && L_tail == nullptr) {
