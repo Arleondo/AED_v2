@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "GLFW/glfw-3.4/docs",
+		"source" : "GLFW/glfw-3.4/docs"
+	}
+}
