@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -E rm -f CMakeFiles\Cbintree_12_05.dir/objects.a
+C:\mingw64\bin\ar.exe qc CMakeFiles\Cbintree_12_05.dir/objects.a @CMakeFiles\Cbintree_12_05.dir\objects1.rsp
+C:\mingw64\bin\c++.exe -g -Wl,--whole-archive CMakeFiles\Cbintree_12_05.dir/objects.a -Wl,--no-whole-archive -o Cbintree_12_05.exe -Wl,--out-implib,libCbintree_12_05.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Cbintree_12_05.dir\linkLibs.rsp

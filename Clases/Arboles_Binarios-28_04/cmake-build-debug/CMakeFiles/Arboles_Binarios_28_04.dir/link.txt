@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -E rm -f CMakeFiles\Arboles_Binarios_28_04.dir/objects.a
+C:\mingw64\bin\ar.exe qc CMakeFiles\Arboles_Binarios_28_04.dir/objects.a @CMakeFiles\Arboles_Binarios_28_04.dir\objects1.rsp
+C:\mingw64\bin\c++.exe -g -Wl,--whole-archive CMakeFiles\Arboles_Binarios_28_04.dir/objects.a -Wl,--no-whole-archive -o Arboles_Binarios_28_04.exe -Wl,--out-implib,libArboles_Binarios_28_04.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Arboles_Binarios_28_04.dir\linkLibs.rsp

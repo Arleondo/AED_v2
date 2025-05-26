@@ -3,7 +3,6 @@
 
 #include <queue>
 using namespace std;
-// Definición de un nodo de árbol binario
 struct Nodo {
     int valor;
     Nodo* izquierdo;
@@ -12,7 +11,7 @@ struct Nodo {
     explicit Nodo(int val) : valor(val), izquierdo(nullptr), derecho(nullptr) {}
 };
 
-// Función para hacer recorrido por niveles (BFS)
+// Función para hacer recorrido por niveles
 void recorridoPorNiveles(Nodo* raiz) {
     if (!raiz) return;
 
