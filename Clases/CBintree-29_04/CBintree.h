@@ -4,11 +4,10 @@
 template <class T>
 struct CBin_Node{
     CBin_Node<T>* Nodos[2];
-    CBin_Node<T>* Left,* Right;
     T valor;
 
     explicit CBin_Node(T valor, CBin_Node<T>*Left=nullptr, CBin_Node<T>*Right=nullptr):
-            valor(valor),Left(Left),Right(Right){Nodos[0]= nullptr; Nodos[1]= nullptr;};
+            valor(valor){Nodos[0]= nullptr; Nodos[1]= nullptr;};
 };
 
 template <class T>
