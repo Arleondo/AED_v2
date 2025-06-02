@@ -1,0 +1,4 @@
+﻿  Bordes_N.cpp
+D:\AED_v2\Tareas\Bordes_N\Bordes_N\Arbolito.hpp(1,10): error C1083: No se puede abrir el archivo incluir: 'SFML/Graphics.hpp': No such file or directory
+  (compilando archivo de origen "Bordes_N.cpp")
+  
