@@ -133,6 +133,9 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Arbol.hpp" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
     <Import Project="..\packages\SFML_VS2019.1.0.0\build\SFML_VS2019.targets" Condition="Exists('..\packages\SFML_VS2019.1.0.0\build\SFML_VS2019.targets')" />
