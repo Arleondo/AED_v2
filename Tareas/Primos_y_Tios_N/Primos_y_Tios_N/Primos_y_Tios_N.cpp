@@ -4,19 +4,14 @@
 #include <vector>
 using namespace std;
 
-struct CBinNode
-{
+struct CBinNode{
     int value;
     int color;
     CBinNode* nodes[2];
-    CBinNode(int _v)
-    {
-        value = _v; nodes[0] = nodes[1] = 0; color = 0;
-    }
+    CBinNode(int v){value = v; nodes[0] = nodes[1] = 0; color = 0;}
 };
 
-class CBinTree
-{
+class CBinTree{
 public:
     CBinTree();
     ~CBinTree();
@@ -29,14 +24,12 @@ private:
     void color(CBinNode* n, sf::RenderWindow& window, float x, float y, float offsetX, float offsetY);
 };
 
-CBinTree::CBinTree()
-{
+CBinTree::CBinTree(){
     m_root = 0;
     m_b = 0;
 }
 
-CBinTree::~CBinTree()
-{
+CBinTree::~CBinTree(){
 }
 
 void CBinTree::color(CBinNode* n, sf::RenderWindow& window, float x, float y, float offsetX, float offsetY) {
@@ -137,24 +130,21 @@ void CBinTree::primosytios(int x, sf::RenderWindow& window) {
 }
 
 
-bool CBinTree::Find(int x, CBinNode**& p)
-{
+bool CBinTree::Find(int x, CBinNode**& p){
     for (p = &m_root;
         *p && (*p)->value != x;
         p = &((*p)->nodes[(*p)->value < x]));
     return *p && (*p)->value == x;
 }
 
-bool CBinTree::Insert(int x)
-{
+bool CBinTree::Insert(int x){
     CBinNode** p;
     if (Find(x, p)) return 0;
     *p = new CBinNode(x);
     return 0;
 }
 
-int main()
-{
+int main() {
     CBinTree t;
     t.Insert(100);
     t.Insert(30);
@@ -182,7 +172,7 @@ int main()
             }
         }
         window.clear();
-        t.primosytios(120, window);
+        t.primosytios(20, window);
         window.display();
     }
 

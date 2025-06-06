@@ -1,7 +1,6 @@
 #include "Arbol.hpp"
 
-int main()
-{
+int main(){
     CBinTree t;
     t.Insert(100);
     t.Insert(30);

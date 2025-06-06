@@ -4,8 +4,7 @@
 
 using namespace std;
 
-struct CBinNode
-{
+struct CBinNode{
     int value;
     int color;
     CBinNode* nodes[2];
@@ -15,11 +14,10 @@ struct CBinNode
     }
 };
 
-class CBinTree
-{
+class CBinTree{
 public:
     CBinTree();
-    ~CBinTree();
+    ~CBinTree() {};
     bool Insert(int x);
     void contorno(sf::RenderWindow& window);
 private:
@@ -29,15 +27,11 @@ private:
     void color(CBinNode* n, sf::RenderWindow& window, float x, float y, float offsetX, float offsetY);
 };
 
-CBinTree::CBinTree()
-{
+CBinTree::CBinTree(){
     m_root = 0;
     m_b = 0;
 }
 
-CBinTree::~CBinTree()
-{
-}
 
 void CBinTree::color(CBinNode* n, sf::RenderWindow& window, float x, float y, float offsetX, float offsetY) {
     if (n == nullptr) return;
@@ -124,16 +118,14 @@ void CBinTree::contorno(sf::RenderWindow& window) {
 }
 
 
-bool CBinTree::Find(int x, CBinNode**& p)
-{
+bool CBinTree::Find(int x, CBinNode**& p){
     for (p = &m_root;
         *p && (*p)->value != x;
         p = &((*p)->nodes[(*p)->value < x]));
     return *p && (*p)->value == x;
 }
 
-bool CBinTree::Insert(int x)
-{
+bool CBinTree::Insert(int x){
     CBinNode** p;
     if (Find(x, p)) return 0;
     *p = new CBinNode(x);

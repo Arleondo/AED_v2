@@ -1,3 +1,3 @@
 ﻿  Primos_y_Tios_N.cpp
-D:\AED\Tareas\Primos_y_Tios_N\Primos_y_Tios_N\Primos_y_Tios_N.cpp(103,15): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
-  Primos_y_Tios_N.vcxproj -> D:\AED\Tareas\Primos_y_Tios_N\x64\Debug\Primos_y_Tios_N.exe
+D:\AED_v2\Tareas\Primos_y_Tios_N\Primos_y_Tios_N\Primos_y_Tios_N.cpp(96,15): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
+  Primos_y_Tios_N.vcxproj -> D:\AED_v2\Tareas\Primos_y_Tios_N\x64\Debug\Primos_y_Tios_N.exe
