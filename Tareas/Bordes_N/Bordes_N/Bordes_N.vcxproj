@@ -131,9 +131,6 @@
     <ClCompile Include="Bordes_N.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Arbolito.hpp" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
