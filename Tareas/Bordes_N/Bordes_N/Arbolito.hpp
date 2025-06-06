@@ -1,141 +1,141 @@
-
-#include <cmath>
-#include <sstream>
+#include <SFML/Graphics.hpp>
+#include <iostream>
+#include <queue>
 
 using namespace std;
 
-template <class T>
-struct Node {
-    Node<T>* Nodos[2];
-    T valor;
-
-    explicit Node(T valor, Node<T>* Left = nullptr, Node<T>* Right = nullptr) :
-        valor(valor) {
-        Nodos[0] = Left; Nodos[1] = Right;
-    };
+struct CBinNode
+{
+    int value;
+    int color;
+    CBinNode* nodes[2];
+    CBinNode(int _v)
+    {
+        value = _v; nodes[0] = nodes[1] = 0; color = 0;
+    }
 };
 
-template <class T>
-class Tree {
-    Node<T>* Root;
-
-    Node<T>**& rep(Node<T>** pos) {
-        Node<T>** left = &((*pos)->Nodos[0]);
-        for (; (*left)->Nodos[1] && *left; left = &((*left)->Nodos[1])) {}
-        return left;
-    }
-
+class Tree
+{
 public:
-
-    Tree() : Root(nullptr) {};
-
-    bool find(T valor, Node<T>**& pos) {
-        /*
-        while (*pos && (*pos)->valor!=valor ){
-            if(valor<(*pos)->valor){
-                pos = & ((*pos)->Left);
-            }
-            pos = &((*pos)->Right);
-        }
-        */
-
-        while (*pos && (*pos)->valor != valor) {
-            pos = &((*pos)->Nodos[(valor >= (*pos)->valor)]);
-        }
-
-        return *pos != nullptr;
-    }
-
-    bool Insert(T valor) {
-        Node<T>** p = &Root;
-
-        if (!find(valor, p)) {
-            *p = new Node<T>(valor); return true;
-        }
-        return false;
-    }
-
-    bool Remove(T valor) {
-        Node<T>** p = &Root;
-
-        if (find(valor, p)) {
-            //Caso 2
-            if ((*p)->Nodos[0] && (*p)->Nodos[1]) {
-                Node<T>** q = rep(p);
-                (*p)->valor = (*q)->valor; p = q;
-            }
-            //Caso 1-0
-            Node<T>* temp = *p; *p = (*p)->Nodos[(*p)->Nodos[1] != nullptr];
-            delete temp; return true;
-        }
-        return false;
-    }
-
-};
-
-
-template <class T>
-class TreeDrawer {
-    Node<T>* root;
-    sf::RenderWindow window;
-    const int nodeRadius = 20;
-    const int horizontalSpacing = 40;
-    const int verticalSpacing = 75;
-
-public:
-    TreeDrawer(Node<T>* root) : root(root), window(sf::VideoMode(800, 600), "Binary Tree Visualizer") {}
-
-    void drawTree() {
-        while (window.isOpen()) {
-            sf::Event event;
-            while (window.pollEvent(event)) {
-                if (event.type == sf::Event::Closed)
-                    window.close();
-            }
-
-            window.clear(sf::Color::White);
-            drawNode(root, 400, 40, 200); // Start at center-top
-            window.display();
-        }
-    }
-
+    Tree();
+    ~Tree();
+    bool Insert(int x);
+    void contorno(sf::RenderWindow& window);
 private:
-    void drawNode(Node<T>* node, int x, int y, int offsetX) {
-        if (!node) return;
+    bool Find(int x, CBinNode**& p);
+    CBinNode* m_root;
+    bool m_b;
+    void color(CBinNode* n, sf::RenderWindow& window, float x, float y, float offsetX, float offsetY);
+};
 
-        sf::CircleShape circle(nodeRadius);
-        circle.setFillColor(sf::Color(200, 220, 255));
-        circle.setOutlineThickness(2);
-        circle.setOutlineColor(sf::Color::Black);
-        circle.setPosition(x - nodeRadius, y - nodeRadius);
-        window.draw(circle);
+Tree::Tree()
+{
+    m_root = 0;
+    m_b = 0;
+}
 
-        // Dibujar texto dentro del nodo
-        sf::Font font;
-        font.loadFromFile("arial.ttf");  // Asegúrate de tener esta fuente o cambia el nombre
-        sf::Text text;
-        text.setFont(font);
-        text.setCharacterSize(16);
-        text.setFillColor(sf::Color::Black);
+Tree::~Tree()
+{
+}
 
-        std::stringstream ss;
-        ss << node->valor;
-        text.setString(ss.str());
-        text.setPosition(x - 10, y - 10);
-        window.draw(text);
+void Tree::color(CBinNode* n, sf::RenderWindow& window, float x, float y, float offsetX, float offsetY) {
+    if (n == nullptr) return;
 
-        // Líneas y recursión
-        for (int i = 0; i < 2; ++i) {
-            if (node->Nodos[i]) {
-                int newX = x + (i == 0 ? -offsetX : offsetX);
-                int newY = y + verticalSpacing;
-                sf::Vertex line[] = {
-                    sf::Vertex(sf::Vector2f(x, y + nodeRadius)),
-                    sf::Vertex(sf::Vector2f(newX, newY - nodeRadius))
-                };
-                window.draw(line, 2, sf::Lines);
-                drawNode(node->Nodos[i], newX, newY, offsetX / 1.5);
+    sf::CircleShape circle(30);
+
+    circle.setPosition(x, y);
+
+    if (n->color == 1 || (n != nullptr && n->nodes[0] == nullptr && n->nodes[1] == nullptr)) {
+        circle.setFillColor(sf::Color::Red);
+    }
+    else {
+        circle.setFillColor(sf::Color::Black);
+    }
+
+    sf::Font font;
+    if (!font.loadFromFile("C:/Windows/Fonts/arial.ttf")) {
+        cout << "Error al cargar la fuente\n";
+        return;
+    }
+
+    sf::Text text;
+    text.setFont(font);
+    text.setString(to_string(n->value));
+    text.setCharacterSize(24);
+    text.setFillColor(sf::Color::White);
+    text.setPosition(x + 10, y + 5);
+
+    window.draw(circle);
+    window.draw(text);
+
+    if (n->nodes[0] != nullptr) {
+        sf::Vertex lineaIzquierda[] = {
+            sf::Vertex(sf::Vector2f(x + 30, y + 30)),
+            sf::Vertex(sf::Vector2f(x - offsetX + 30, y + offsetY + 30))
+        };
+        window.draw(lineaIzquierda, 2, sf::Lines);
+        color(n->nodes[0], window, x - offsetX, y + offsetY, offsetX / 2, offsetY);
+    }
+
+    if (n->nodes[1] != nullptr) {
+        sf::Vertex lineaDerecha[] = {
+            sf::Vertex(sf::Vector2f(x + 30, y + 30)),
+            sf::Vertex(sf::Vector2f(x + offsetX + 30, y + offsetY + 30))
+        };
+        window.draw(lineaDerecha, 2, sf::Lines);
+        color(n->nodes[1], window, x + offsetX, y + offsetY, offsetX / 2, offsetY);
+    }
+}
+
+void Tree::contorno(sf::RenderWindow& window) {
+    if (m_root == nullptr) {
+        return;
+    }
+
+    CBinNode* p = m_root;
+    CBinNode* q = m_root;
+
+    while (p || q) {
+        if (p != nullptr) {
+            p->color = 1;
+            if (p->nodes[0] != nullptr) {
+                p = p->nodes[0];
+            }
+            else {
+                p = p->nodes[1];
             }
         }
+
+        if (q || nullptr) {
+            q->color = 1;
+            if (q->nodes[1] != nullptr) {
+                q = q->nodes[1];
+            }
+            else {
+                q = q->nodes[0];
+            }
+
+        }
     }
-};
+    color(m_root, window, 400, 50, 200, 100);
+
+
+}
+
+
+bool Tree::Find(int x, CBinNode**& p)
+{
+    for (p = &m_root;
+        *p && (*p)->value != x;
+        p = &((*p)->nodes[(*p)->value < x]));
+    return *p && (*p)->value == x;
+}
+
+bool Tree::Insert(int x)
+{
+    CBinNode** p;
+    if (Find(x, p)) return 0;
+    *p = new CBinNode(x);
+    return 0;
+}

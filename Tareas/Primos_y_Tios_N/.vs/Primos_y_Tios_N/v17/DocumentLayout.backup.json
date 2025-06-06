@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\AED\\Tareas\\Primos_y_Tios_N\\",
+  "WorkspaceRootPath": "D:\\AED_v2\\Tareas\\Primos_y_Tios_N\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CF00D34A-6527-43B9-B3A2-787B84EEA022}|Primos_y_Tios_N\\Primos_y_Tios_N.vcxproj|D:\\AED\\Tareas\\Primos_y_Tios_N\\Primos_y_Tios_N\\Primos_y_Tios_N.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{CF00D34A-6527-43B9-B3A2-787B84EEA022}|Primos_y_Tios_N\\Primos_y_Tios_N.vcxproj|D:\\AED_v2\\Tareas\\Primos_y_Tios_N\\Primos_y_Tios_N\\Primos_y_Tios_N.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{CF00D34A-6527-43B9-B3A2-787B84EEA022}|Primos_y_Tios_N\\Primos_y_Tios_N.vcxproj|solutionrelative:Primos_y_Tios_N\\Primos_y_Tios_N.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -20,13 +20,13 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Primos_y_Tios_N.cpp",
-              "DocumentMoniker": "D:\\AED\\Tareas\\Primos_y_Tios_N\\Primos_y_Tios_N\\Primos_y_Tios_N.cpp",
+              "DocumentMoniker": "D:\\AED_v2\\Tareas\\Primos_y_Tios_N\\Primos_y_Tios_N\\Primos_y_Tios_N.cpp",
               "RelativeDocumentMoniker": "Primos_y_Tios_N\\Primos_y_Tios_N.cpp",
-              "ToolTip": "D:\\AED\\Tareas\\Primos_y_Tios_N\\Primos_y_Tios_N\\Primos_y_Tios_N.cpp",
+              "ToolTip": "D:\\AED_v2\\Tareas\\Primos_y_Tios_N\\Primos_y_Tios_N\\Primos_y_Tios_N.cpp",
               "RelativeToolTip": "Primos_y_Tios_N\\Primos_y_Tios_N.cpp",
-              "ViewState": "AgIAAJIAAAAAAAAAAAAAwK4AAABCAAAAAAAAAA==",
+              "ViewState": "AgIAAJ8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-30T04:29:24.343Z",
+              "WhenOpened": "2025-06-06T12:23:02.921Z",
               "EditorCaption": ""
             }
           ]

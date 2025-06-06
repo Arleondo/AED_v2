@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\AED_v2\\Tareas\\Bordes_N\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{55A8B78A-1DD7-440F-A514-FCEAF250D19A}|Bordes_N\\Bordes_N.vcxproj|D:\\AED_v2\\Tareas\\Bordes_N\\Bordes_N\\Arbolito.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{55A8B78A-1DD7-440F-A514-FCEAF250D19A}|Bordes_N\\Bordes_N.vcxproj|solutionrelative:Bordes_N\\Arbolito.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{55A8B78A-1DD7-440F-A514-FCEAF250D19A}|Bordes_N\\Bordes_N.vcxproj|D:\\AED_v2\\Tareas\\Bordes_N\\Bordes_N\\Bordes_N.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{55A8B78A-1DD7-440F-A514-FCEAF250D19A}|Bordes_N\\Bordes_N.vcxproj|solutionrelative:Bordes_N\\Bordes_N.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55A8B78A-1DD7-440F-A514-FCEAF250D19A}|Bordes_N\\Bordes_N.vcxproj|D:\\AED_v2\\Tareas\\Bordes_N\\Bordes_N\\Arbolito.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{55A8B78A-1DD7-440F-A514-FCEAF250D19A}|Bordes_N\\Bordes_N.vcxproj|solutionrelative:Bordes_N\\Arbolito.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,30 +18,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 55,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Arbolito.hpp",
               "DocumentMoniker": "D:\\AED_v2\\Tareas\\Bordes_N\\Bordes_N\\Arbolito.hpp",
               "RelativeDocumentMoniker": "Bordes_N\\Arbolito.hpp",
               "ToolTip": "D:\\AED_v2\\Tareas\\Bordes_N\\Bordes_N\\Arbolito.hpp",
               "RelativeToolTip": "Bordes_N\\Arbolito.hpp",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-30T12:55:26.006Z",
+              "WhenOpened": "2025-06-06T12:21:11.294Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Bordes_N.cpp",
               "DocumentMoniker": "D:\\AED_v2\\Tareas\\Bordes_N\\Bordes_N\\Bordes_N.cpp",
               "RelativeDocumentMoniker": "Bordes_N\\Bordes_N.cpp",
               "ToolTip": "D:\\AED_v2\\Tareas\\Bordes_N\\Bordes_N\\Bordes_N.cpp",
               "RelativeToolTip": "Bordes_N\\Bordes_N.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-30T12:28:19.974Z",
               "EditorCaption": ""
